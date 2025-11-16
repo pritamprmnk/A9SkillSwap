@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://i.postimg.cc/3xJ1fKqL/guitar.png",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://i.postimg.cc/V6LwjhhG/english.png",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Digital Marketing Basics",
+    "providerName": "John Carter",
+    "providerEmail": "john@skillswap.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Learn SEO, social media strategy, and online branding fundamentals.",
+    "image": "https://i.postimg.cc/7Yz4zLhG/marketing.png",
+    "category": "Business"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Basic Cooking for Beginners",
+    "providerName": "Maya Rahman",
+    "providerEmail": "maya@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Learn to cook simple and delicious homemade meals.",
+    "image": "https://i.postimg.cc/XJ2qh4tX/cooking.png",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Watercolor Painting Workshop",
+    "providerName": "Elena Cruz",
+    "providerEmail": "elena@skillswap.com",
+    "price": 25,
+    "rating": 5.0,
+    "slotsAvailable": 3,
+    "description": "Creative watercolor painting class suitable for all skill levels.",
+    "image": "https://i.postimg.cc/BZ3K7q5n/painting.png",
+    "category": "Art"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Basic Woodworking Skills",
+    "providerName": "Michael Stone",
+    "providerEmail": "michael@skillswap.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 2,
+    "description": "Hands-on woodworking sessions teaching essential tools and techniques.",
+    "image": "https://i.postimg.cc/pd3RhJbY/woodwork.png",
+    "category": "Craft"
+  }
+]

@@ -1,9 +1,12 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import React from 'react';
+// import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { use } from 'react';
 import { Link } from 'react-router';
-import { auth } from '../../Firebase/firebase.init';
+import { AuthContext } from '../../Contexts/AuthContext/AuthContext';
+// import { auth } from '../../Firebase/firebase.init';
 
 const SignUp = () => {
+    const {createUser} = use(AuthContext);
+    console.log("in the signup",)
 
     const handleSignUp = (event) =>{
         event.preventDefault();
@@ -11,13 +14,22 @@ const SignUp = () => {
         const password = event.target.password.value;
         console.log(email,password);
 
-        createUserWithEmailAndPassword(auth, email, password)
+        createUser(email, password)
         .then(result =>{
-            console.log(result)
+            console.log(result.user);
+            event.target.reset();
         })
         .catch(error =>{
-            console.log(error)
+            console.log(error);
         })
+
+        // createUserWithEmailAndPassword(auth, email, password)
+        // .then(result =>{
+        //     console.log(result)
+        // })
+        // .catch(error =>{
+        //     console.log(error)
+        // })
 
     }
 

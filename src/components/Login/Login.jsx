@@ -1,7 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { use } from 'react';
+import { Link, useLocation } from 'react-router';
+import { AuthContext } from '../../Contexts/AuthContext/AuthContext';
+import { useNavigate } from 'react-router';
 
 const Login = () => {
+    const {signInUser} = use(AuthContext);
+
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location)
+
+    const handleLogIn = event =>{
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+
+        console.log(email, password);
+        signInUser(email, password)
+        .then(result =>{
+            console.log(result.user);
+            event.target.reset();
+            navigate(location.state || "/")
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+    }
     return (
         <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 bg-gray-50">
            {/* Left Section */}
@@ -16,7 +41,7 @@ const Login = () => {
             <p className="text-gray-500 mb-6">Enter your credentials to access your account.</p>
 
 
-           <form>
+           <form onSubmit={handleLogIn}>
 
             {/* Email */}
        <label className="text-gray-700 font-medium">Email</label>
