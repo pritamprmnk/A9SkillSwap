@@ -5,7 +5,7 @@ const Banner = () => {
         <section className="relative w-full max-w-7xl mx-auto rounded-2xl overflow-hidden mt-10">
 {/* Background Image */}
 <img
-src= ""
+src= "https://postimg.cc/dLyFcJGC"
 alt="Group"
 className="w-full h-[450px] object-cover brightness-50"
 />

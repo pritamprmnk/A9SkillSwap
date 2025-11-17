@@ -57,7 +57,7 @@ const Navbar = () => {
 
                             {/* Tooltip */}
                             <div className="absolute hidden group-hover:block bg-black text-white text-sm rounded-md px-3 py-2 -left-10 top-12 w-40 shadow-lg z-50">
-                                <p className="font-semibold">{user.name || "User"}</p>
+                                <p className="font-semibold">{user.displayName || "User"}</p>
                                 <p className="text-xs opacity-80">{user.email}</p>
                             </div>
                         </div>
