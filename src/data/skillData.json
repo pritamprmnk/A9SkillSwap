@@ -70,5 +70,29 @@
     "description": "Hands-on woodworking sessions teaching essential tools and techniques.",
     "image": "https://i.postimg.cc/pd3RhJbY/woodwork.png",
     "category": "Craft"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Beginner Photography Essentials",
+    "providerName": "Liam Parker",
+    "providerEmail": "liam@skillswap.com",
+    "price": 18,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Learn camera basics, composition, and natural light techniques.",
+    "image": "https://i.postimg.cc/8PWtXcwc/photography.png",
+    "category": "Photography"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Yoga for Stress Relief",
+    "providerName": "Anika Das",
+    "providerEmail": "anika@skillswap.com",
+    "price": 12,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Gentle yoga sessions focused on relaxation and breathing.",
+    "image": "https://i.postimg.cc/PrNmR0d4/yoga.png",
+    "category": "Wellness"
   }
 ]
