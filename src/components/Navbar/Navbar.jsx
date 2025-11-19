@@ -5,6 +5,7 @@ import { AuthContext } from '../../Contexts/AuthContext/AuthContext';
 import defaultAvatar from "../../assets/avatar.png";
 
 
+
 const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext);
 

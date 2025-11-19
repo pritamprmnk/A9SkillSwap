@@ -6,12 +6,13 @@ import toast from "react-hot-toast";
 import { Eye, EyeOff } from 'lucide-react';
 
 const Login = () => {
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
     const [email, setEmail] = useState("");
+
     const handleLogIn = event => {
         event.preventDefault();
         const emailInput = event.target.email.value;
@@ -32,6 +33,16 @@ const Login = () => {
             })
             .finally(() => setLoading(false));
     };
+    const handleGoogleSignIn = () =>{
+        signInWithGoogle()
+        .then(result =>{
+            console.log(result.user)
+            navigate(location.state || "/");
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
 
     return (
         <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 bg-gray-50">
@@ -87,7 +98,7 @@ const Login = () => {
                 </div>
 
             {/* Google Login */}
-                <button className="w-full border rounded-lg py-3 flex items-center justify-center gap-3 hover:bg-gray-100">
+                <button onClick={handleGoogleSignIn} className="w-full border rounded-lg py-3 flex items-center justify-center gap-3 hover:bg-gray-100">
                     <img
                         src="/assets/search.png"
                         className="w-6 h-6"

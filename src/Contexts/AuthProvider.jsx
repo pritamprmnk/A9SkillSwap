@@ -1,46 +1,64 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext/AuthContext';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithCredential, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { 
+    createUserWithEmailAndPassword, 
+    GoogleAuthProvider, 
+    onAuthStateChanged, 
+    signInWithEmailAndPassword, 
+    signInWithPopup, 
+    signOut 
+} from 'firebase/auth';
 import { auth } from '../Firebase/firebase.init';
 
-const AuthProvider = ({children}) => {
-    const [user,setUser] = useState(null)
+const googleProvider = new GoogleAuthProvider();
 
+const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true); // IMPORTANT
 
-    const createUser = (email, password) =>{
-        return createUserWithEmailAndPassword(auth, email, password)
-    }
+    const createUser = (email, password) => {
+        setLoading(true);
+        return createUserWithEmailAndPassword(auth, email, password);
+    };
 
-    const signInUser = (email, password) =>{
-        return signInWithEmailAndPassword(auth, email, password)
-    }
+    const signInUser = (email, password) => {
+        setLoading(true);
+        return signInWithEmailAndPassword(auth, email, password);
+    };
 
-    const signOutUser = () =>{
+    const signInWithGoogle = () => {
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider);
+    };
+
+    const signOutUser = () => {
+        setLoading(true);
         return signOut(auth);
-    }
+    };
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-            console.log("current user in auth state chage", currentUser)
-            setUser(currentUser)
+            console.log("current user in auth state change", currentUser);
+            setUser(currentUser);
+            setLoading(false);
+        });
 
-        })
-        return() => {
-            unsubscribe();
-        }
-    })
-
+        return () => unsubscribe();
+    }, []);
 
     const authInfo = {
         user,
+        loading,
         createUser,
         signInUser,
-        signOutUser,
-    }
+        signInWithGoogle,
+        signOutUser
+    };
+
     return (
-        <AuthContext value={authInfo}>
+        <AuthContext.Provider value={authInfo}>
             {children}
-        </AuthContext>
+        </AuthContext.Provider>
     );
 };
 
