@@ -8,7 +8,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Acoustic guitar classes for complete beginners.",
-    "image": "https://i.postimg.cc/3xJ1fKqL/guitar.png",
+    "image": "/assets/BeginnerGuitarLessons.jpg",
     "category": "Music"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Conversational English sessions for non-native speakers.",
-    "image": "https://i.postimg.cc/V6LwjhhG/english.png",
+    "image": "/assets/SpokenEnglishPractice.jpeg",
     "category": "Language"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Learn SEO, social media strategy, and online branding fundamentals.",
-    "image": "https://i.postimg.cc/7Yz4zLhG/marketing.png",
+    "image": "/assets/DigitalMarketingBasics.jpeg",
     "category": "Business"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.7,
     "slotsAvailable": 4,
     "description": "Learn to cook simple and delicious homemade meals.",
-    "image": "https://i.postimg.cc/XJ2qh4tX/cooking.png",
+    "image": "/assets/BasicCookingforBeginners.jpg",
     "category": "Cooking"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 5.0,
     "slotsAvailable": 3,
     "description": "Creative watercolor painting class suitable for all skill levels.",
-    "image": "https://i.postimg.cc/BZ3K7q5n/painting.png",
+    "image": "/assets/WatercolorPaintingWorkshop.jpg",
     "category": "Art"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.8,
     "slotsAvailable": 2,
     "description": "Hands-on woodworking sessions teaching essential tools and techniques.",
-    "image": "https://i.postimg.cc/pd3RhJbY/woodwork.png",
+    "image": "/assets/BasicWoodworkingSkills.jpg",
     "category": "Craft"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Learn camera basics, composition, and natural light techniques.",
-    "image": "https://i.postimg.cc/8PWtXcwc/photography.png",
+    "image": "/assets/BeginnerPhotographyEssentials.jpg",
     "category": "Photography"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.7,
     "slotsAvailable": 6,
     "description": "Gentle yoga sessions focused on relaxation and breathing.",
-    "image": "https://i.postimg.cc/PrNmR0d4/yoga.png",
+    "image": "/assets/YogaforStressRelief.jpg",
     "category": "Wellness"
   }
 ]

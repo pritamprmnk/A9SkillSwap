@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sarah Chen",
+    "role": "Digital Marketing Pro",
+    "rating": 5.0,
+    "img": "/assets/avatar.png"
+  },
+  {
+    "name": "David Lee",
+    "role": "Guitar Teacher",
+    "rating": 4.9,
+    "img": "/assets/avatar.png"
+  },
+  {
+    "name": "Maria Garcia",
+    "role": "Spanish Tutor",
+    "rating": 5.0,
+    "img": "/assets/avatar.png"
+  },
+  {
+    "name": "James Taylor",
+    "role": "Woodworking Expert",
+    "rating": 4.8,
+    "img": "/assets/avatar.png"
+  }
+]

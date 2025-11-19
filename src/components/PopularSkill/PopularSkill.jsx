@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const PopularSkill = () => {
   return (
     <div className="py-10 px-4 bg-gray-50 ">
-      <h2 className="text-3xl font-bold text-center text-gray-800">Popular Skills</h2>
+      <h2 className="text-4xl font-bold text-center text-gray-800">Popular Skills</h2>
       <p className="text-gray-500 text-center mb-8">
         Explore top-rated skills offered by talented providers
       </p>
@@ -30,7 +30,7 @@ const PopularSkill = () => {
 
             <p className="text-yellow-500 font-medium">⭐ {skill.rating}</p>
 
-            {/* 👉 View Details Button with Link */}
+            {/* View Details Button with Link */}
 <Link to={`/skill/${skill.skillId}`}>
   <button className="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
     View Details

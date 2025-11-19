@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import HowItWorks from '../../HowItWorks/HowItWorks';
 import TopRatedProviders from '../../TopRatedProviders/TopRatedProviders';
 import PopularSkill from '../PopularSkill/PopularSkill';
+import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
     const authInfo = use(AuthContext);
@@ -14,6 +15,7 @@ const Home = () => {
             <PopularSkill></PopularSkill>
             <TopRatedProviders></TopRatedProviders>
             <HowItWorks></HowItWorks>
+            <Testimonials></Testimonials>
 
         </div>
     );

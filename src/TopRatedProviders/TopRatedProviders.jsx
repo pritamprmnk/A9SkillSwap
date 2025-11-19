@@ -1,38 +1,12 @@
 import React from "react";
 import { Star } from "lucide-react";
+import providers from "../data/providersData.json";
 
 export default function TopRatedProviders() {
-  const providers = [
-    {
-      name: "Sarah Chen",
-      role: "Digital Marketing Pro",
-      rating: 5.0,
-      img: "/avatar.png",
-    },
-    {
-      name: "David Lee",
-      role: "Guitar Teacher",
-      rating: 4.9,
-      img: "/avatar2.png",
-    },
-    {
-      name: "Maria Garcia",
-      role: "Spanish Tutor",
-      rating: 5.0,
-      img: "/avatar3.png",
-    },
-    {
-      name: "James Taylor",
-      role: "Woodworking Expert",
-      rating: 4.8,
-      img: "/avatar4.png",
-    },
-  ];
-
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+        <h2 className="text-4xl md:text-4xl text-center font-bold text-gray-800 mb-12">
           Top Rated Providers
         </h2>
 
@@ -55,7 +29,9 @@ export default function TopRatedProviders() {
                 {[1, 2, 3, 4, 5].map((_, i) => (
                   <Star key={i} size={18} fill="currentColor" />
                 ))}
-                <span className="text-gray-700 ml-1 text-sm font-medium">{p.rating}</span>
+                <span className="text-gray-700 ml-1 text-sm font-medium">
+                  {p.rating}
+                </span>
               </div>
             </div>
           ))}

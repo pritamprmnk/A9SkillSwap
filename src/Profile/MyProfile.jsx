@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Contexts/AuthContext/AuthContext";
 import { updateProfile } from "firebase/auth";
-import { auth } from "../Firebase/firebase.init"; // jekhane tumi firebase init korecho
-
+import { auth } from "../Firebase/firebase.init"; 
 export default function MyProfile() {
   const { user } = useContext(AuthContext);
   const [isEditing, setIsEditing] = useState(false);
@@ -34,7 +33,7 @@ export default function MyProfile() {
         <div className="flex flex-col md:flex-row items-center justify-between border-b pb-6 gap-4 md:gap-0">
           <div className="flex gap-6 items-center">
             <img
-              src={user?.photoURL || "https://via.placeholder.com/100"}
+              src={user?.photoURL || "/assets/avatar.png"}
               alt="Profile"
               className="w-28 h-28 rounded-full border object-cover"
             />
